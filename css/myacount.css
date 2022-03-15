@@ -1,0 +1,197 @@
+/* genral */
+.rightBoxTitle{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+.rightBoxTitle i{
+    font-size: 3.5rem;
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+.rightBoxText{
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+.rightBoxBtn:hover{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+/* genral */
+.myaccount__content{
+    display: flex;
+}
+.myaccount__leftBox{
+    margin-right: 3rem;
+    min-width: 25%;
+}
+.leftBox__title{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.leftBox__link li{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--sec-color);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.activeLink{
+    font-weight: bolder;
+    color: var(--black-color) !important;
+}
+.myaccount__rightBox{
+    flex: 1;
+}
+.rightBoxShow{
+    display: none;
+}
+.rightBoxShowActive{
+    display: block;
+}
+.rightBox__dashboard p{ 
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.rightBox__dashboard p a{
+    color: var(--blue-color);
+}
+.rightBox__dashboard p a:hover{
+    text-decoration: underline;
+}
+.dashboard__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dashboard__content__box{
+    min-width: 31%;
+    min-height: 150px;
+    border: 2px solid var(--sec-color);
+    flex-direction: column;
+    color: var(--back-color);
+    margin-bottom: 2rem;
+}
+.dashboard__content__box i{
+    color: var(--sec-color);
+    font-size: 4rem;
+}
+.dashboard__content__box__title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.orderList__header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.orderList__body{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 4rem;
+    text-align: center;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.orderBtn{
+    background-color: var(--th-color);
+    color: var(--white-color);
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.rightBox__address__content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+.rightBox__address__info{
+    width: 45%;
+}
+.address__info__title{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+.address__info__text{
+    padding: 1.5rem 0;
+    font-size: 1.3rem;
+    color: var(--main-color);
+}
+/* form */
+.rigthForm{
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
+.rigthForm label{
+    display: block;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+.rigthForm input,
+.rigthForm select{
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    color: var(--main-color);
+    border: 1px solid var(--sec-color);
+    margin-bottom: 1rem;
+}
+.rigthForm select,
+.rigthForm select option{
+    text-transform: capitalize;
+}
+.form__name{
+    display: flex;
+    justify-content: space-between;
+}
+.form__name__box{
+    width: 49%;
+}
+.form__password{
+    padding: 2rem;
+    margin-top: 3.5rem;
+    border: 1px solid var(--sec-color);
+}
+.form__password__title{
+    color: var(--black-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.formBtn{
+    margin: 3rem 0;
+}
+
+
+@media (max-width: 768px){
+    .myaccount__content,
+    .rightBox__address__content,
+    .form__name{
+        flex-direction: column;
+    }
+    .myaccount__leftBox,
+    .rightBox__address__info{
+        margin-bottom: 2rem;
+    }
+    .dashboard__content__box{
+        width: 48%;
+    }
+    .rightBoxTitle,
+    .orderList__header{
+        display: none;
+    }
+    .rightBox__address__info,
+    .form__name__box{
+        width: 100%;        
+    }
+}
